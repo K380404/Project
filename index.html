@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Clone Netflix</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/.../5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <div class="hamburger" onclick="toggleNav()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <!-- Sidebar Navigation -->
+        <div class="side-nav" id="sideNav">
+            <img src="Images/logo.png" class="logo" alt="Logo">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#menu">Menu</a></li>
+            </ul>
+        </div>
+        <!---->
+        <div class="main-content">
+            <section id="home" class="header-content">
+                <h1>Unlimited movies, TV shows and more.</h1>
+                <h3>Watch anywhere. Cancel Anytime.</h3>
+                <p style="color:white">Search for your favorite movie here:</p>
+                <form class="movie-search" onsubmit="searchMovie(event)">
+                    <input type="text" id="movieInput" placeholder="Enter movie name" required>
+                    <button type="submit">Search</button>
+                </form>
+            </section>
+        </div>
+        <!-- feauture -->
+        <div class="features">
+            <div class="row">
+                <div class="text-col">
+                    <h2 style="color: white">Watch Everywhere</h2>
+                    <p style="color:white">Streaming unlimited movies and TV shows on your phone, tablet, laptop, and TV</p>
+                </div>
+                <div class="img-col">
+                    <img src="Images/p1.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="features">
+            <div class="row">
+                <div class="img-col">
+                    <img src="Images/p2.png" alt="">
+                </div>
+                <div class="text-col">
+                    <h2 style="color: white">Create profiles for children</h2>
+                    <p style="color:white">Send children on adventures with their favorite characters in a space made just for them, free with your membership.</p>
+                </div>
+            </div>
+        </div>
+        <div class="features">
+            <div class="row">
+                <div class="text-col">
+                    <h2 style="color: white">Enjoy on your TV.</h2>
+                    <p style="color:white">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+                </div>
+                <div class="img-col">
+                    <img src="Images/p3.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="features">
+            <div class="row">
+                <div class="img-col">
+                    <img src="Images/p4.png" alt="">
+                </div>
+                <div class="text-col">
+                    <h2 style="color: white">Download your shows to watch offline.</h2>
+                    <p style="color:white">Save your favorites easily and always have something to watch.</p>
+                </div>      
+            </div>
+        </div>
+        body>
+        <div class="menu">
+          <section id="menu">
+            <div class="row">
+              <div class="main-text center-align">
+                <h1 style="color: white">Choose the Best Movie for You</h1>
+                <h4 style="color: white">Find Your Perfect Movie with Just One Click</h4>
+              </div>
+            </div>
+          </section>
+          <div class="grid-container">
+            <!-- Replace videos with embedded YouTube links -->
+            <div class="grid-item">
+              <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/KS0XacjMmOc" title="Video 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/WlopfWYGBh4" title="Video 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/YBwoSa3n8Yc" title="Video 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/B-yhF7IScUE" title="Video 4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/DCWcK4c-F8Q" title="Video 5" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/avgAWhF0Tw4" title="Video 6" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/lsRpSsFb4hg" title="Video 7" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/zCcaZ6Y6x8c" title="Video 8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/46cM-xsEDE4" title="Video 9" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/XuDwndGaCFo" title="Video 10" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/Hybz2_VsIDY" title=" title="Video 11" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/HHGIRpaFgCs" title="Video 12" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/uPOONJlXRr4" title="Video 13" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/FBnkVJslRGo" title="Video 14" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/TbiPcMCz0Ek" title="Video 15" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/MCb13lbVGE0" title="Video 16" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/Ed1sGgHUo88" title="Video 17" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/WlopfWYGBh4" title="Video 18" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/k9wi0DRAbBU" title="Video 19" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/d74vHvsACSs" title="Video 20" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+            <!-- Add more grid items as needed -->
+          </div>
+        </div>
+        <div class="about-text">
+            <section id="about" class="">
+            <h1>About Us</h1>
+            <p>
+                Welcome to our platform, where entertainment meets innovation. We are passionate about delivering unlimited movies, TV shows, and more, tailored to your preferences. 
+                Our goal is to redefine how you experience content with seamless streaming across all your devices.
+            </p>
+            <p>
+                Whether you're at home or on the go, we bring the magic of storytelling right to your fingertips. Join us in exploring a world of entertainment, curated just for you.
+            </p>
+            <a href="https://www.netflix.com/login" target="_blank">
+                <button>Learn More</button>
+            </a>
+        </section>
+        </div>
+            <section class="team-section">
+                <h1>Meet Our Amazing Team</h1>
+                <p>Discover the talented people behind our success.</p>
+                <div class="team-container">
+                    <!-- Team Member 1 -->
+                    <div class="team-member">
+                        <a href="https://www.facebook.com/profile.php?id=61564987641602" target="_blank">
+                            <img src="Images/marlon.png" alt="Marlon">
+                        </a>
+                        <h3>Marlon</h3>
+                        <p>Lead Dev</p>
+                    </div>
+                    <!-- Team Member 2 -->
+                    <div class="team-member">
+                        <a href="https://www.facebook.com/profile.php?id=100012054128938" target="_blank">
+                            <img src="Images/bon.png" alt="Bon">
+                        </a>
+                        <h3>Bon</h3>
+                        <p>Back End </p>
+                    </div>
+                    <!-- Team Member 3 -->
+                    <div class="team-member">
+                        <a href="https://www.facebook.com/profile.php?id=61560929114305" target="_blank">
+                            <img src="Images/rara.png" alt="RaRa">
+                        </a>
+                        <h3>RaRa</h3>
+                        <p>Front End</p>
+                    </div>
+                    <!-- Team Member 4 -->
+                    <div class="team-member">
+                        <a href="https://www.facebook.com/reinasaurus.06" target="_blank">
+                            <img src="Images/rein.png" alt="Rein">
+                        </a>
+                        <h3>Rein</h3>
+                        <p>Content Creator</p>
+                    </div>
+                </div>
+            </section>
+            <div class="contact-us">
+                <section id="contact" class="">
+                <div class="contact-container">
+                    <h1>Contact Us</h1>
+                    <p>Have questions, feedback, or need support? We're here to help! Reach out to us using the form below or contact us directly via email or phone.</p>
+                    <div class="contact-details">
+                        <p><strong>Email:</strong> Bsis109Developer@gmail.com</p>
+                        <p><strong>Phone:</strong> +63933666066</p>
+                        <p><strong>Address:</strong> Burol-Main KLD Campus</p>
+                    </div>
+                    <form action="#" method="post" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+                </section>
+            </div>
+            <footer class="footer">
+                <div class="footer-container">
+                    <!-- About Section -->
+                    <div class="footer-about">
+                        <h3>About Us</h3>
+                        <p>
+                            We are dedicated to providing a seamless entertainment experience, offering a curated collection of movies and TV shows tailored to your preferences. Join us and explore endless stories at your fingertips.
+                        </p>
+                    </div>
+                    <!-- Quick Links -->
+                    <div class="footer-links">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#contact">Contact Us</a></li>
+                            <li><a href="#menu">Menu</a></li>
+                        </ul>
+                    </div>
+                    <!-- Contact Information -->
+                    <div class="footer-contact">
+                        <h3>Contact Us</h3>
+                        <p>Email: <a href="osiamarlon101@gmail.com">Bsis109Developer@gmail.com</a></p>
+                        <p>Phone: +639360441001</p>
+                        <p>Address: Dasmarinas Cavite Burol-Main KLD campus</p>
+                    </div>
+                </div>
+                <!-- Footer Bottom -->
+                <div class="footer-bottom">
+                    <p>&copy; 2024 Your Website Name. All Rights Reserved.</p>
+                    <p>Follow us: 
+                        <a href="https://www.facebook.com/netflixph/?brand_redir=6275848869"><i class="fab fa-facebook"></i></a>
+                        <a href="https://x.com/netflix"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/netflix/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/@Netflix"><i class="fab fa-youtube"></i></a>
+                    </p>
+                </div>
+            </footer>
+    <script>
+        function toggleNav() {
+            const sideNav = document.getElementById("sideNav");
+            sideNav.classList.toggle("active");
+        }
+    </script> 
+    <script>
+        // JavaScript to handle the movie search
+        function searchMovie(event) {
+            event.preventDefault(); // Prevent form submission
+            const movieName = document.getElementById('movieInput').value.trim();
+            if (movieName) {
+                // You can redirect to a search page or display results here
+                console.log(`Searching for: ${movieName}`);
+                alert(`Searching for "${movieName}"...`); 
+                // Replace alert with API call or redirection logic
+            } else {
+                alert('Please enter a movie name.');
+            }
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
