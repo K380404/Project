@@ -104,14 +104,28 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    flex-direction: column; /* Stack content vertically on mobile */
+    height: auto; /* Allow the height to adjust to the content */
+    min-height: 100vh; /* Ensure it covers the full viewport height */
     text-align: center;
     padding: 20px;
 }
+
 .header-content {
-    max-width: 600px;
+    max-width: 90%; /* Reduce width to fit smaller screens */
     margin: auto;
     color: white;
+}
+
+/* Responsive Design for Larger Screens */
+@media (min-width: 768px) {
+    .main-content {
+        flex-direction: row; /* Restore horizontal alignment for larger screens */
+        height: 100vh; /* Full-screen height for desktops */
+    }
+    .header-content {
+        max-width: 600px; /* Restore original max-width */
+    }
 }
 .header-content h1 {
     font-size: 3rem;
@@ -391,8 +405,16 @@ body {
     text-align: center;
 }
 .contact-container {
-    max-width: 800px;
+    max-width: 90%; /* Adjust to fit mobile screens */
     margin: 0 auto;
+    padding: 1rem; /* Add padding for better appearance */
+    box-sizing: border-box; /* Include padding and borders in the width */
+}
+
+@media (min-width: 768px) {
+    .contact-container {
+        max-width: 800px; /* Restore larger max-width for tablets and desktops */
+    }
 }
 .contact-us h1 {
     font-size: 2.5rem;
@@ -472,14 +494,32 @@ body {
 .footer-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column; /* Stack items vertically for mobile */
     gap: 20px;
-    max-width: 1200px;
+    max-width: 100%; /* Ensure the container fits the screen width */
     margin: 0 auto;
+    text-align: center; /* Center-align content for better appearance */
 }
+
 .footer-container > div {
-    flex: 1 1 300px;
-    margin: 10px 0;
+    flex: 1 1 auto; /* Allow flexible sizing */
+    width: 100%; /* Make each block take full width on mobile */
+    max-width: 350px; /* Limit maximum width for better readability */
+    margin: 0 auto 20px; /* Center each block and add spacing */
+}
+
+/* Responsive Design for Larger Screens */
+@media (min-width: 768px) {
+    .footer-container {
+        flex-direction: row; /* Revert to row layout for larger screens */
+        justify-content: space-between; /* Distribute items evenly */
+        text-align: left; /* Align text left for desktop */
+        max-width: 1200px; /* Restore the original width */
+    }
+    .footer-container > div {
+        flex: 1 1 300px; /* Restore original sizing */
+        margin: 10px 0; /* Reset margins */
+    }
 }
 .footer-container h3 {
     font-size: 1.5rem;
