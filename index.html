@@ -19,14 +19,16 @@
         </div>
         <!-- Sidebar Navigation -->
         <div class="side-nav" id="sideNav">
-            <img src="Images/logo.png" class="logo" alt="Logo">
+          <img src="Images/logo.png" class="logo" alt="Logo">
+         
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-                <li><a href="#menu">Menu</a></li>
-            </ul>
-        </div>
+              <li><a href="index.html">Home</a></li> <!-- Link to the Home page -->
+              <li><a href="about.html">About Us</a></li> <!-- Link to the About Us page -->
+              <li><a href="contactus.html">Contact Us</a></li> <!-- Link to the Contact Us page -->
+              <li><a href="menu.html">Menu</a></li> <!-- Link to the Menu page -->
+          </ul>
+          
+      </div>
         <!---->
         <div class="main-content">
             <section id="home" class="header-content">
@@ -289,11 +291,15 @@
                     <div class="footer-links">
                         <h3>Quick Links</h3>
                         <ul>
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#about">About Us</a></li>
-                            <li><a href="#contact">Contact Us</a></li>
-                            <li><a href="#menu">Menu</a></li>
-                        </ul>
+                          <!-- Link to About Us Page -->
+                          <li><a href="pages/about.html">About Us</a></li>
+              
+                          <!-- Link to Contact Us Page -->
+                          <li><a href="pages/contact.html">Contact Us</a></li>
+              
+                          <!-- Link to Menu Page -->
+                          <li><a href="pages/menu.html">Menu</a></li>
+                      </ul>
                     </div>
                     <!-- Contact Information -->
                     <div class="footer-contact">
@@ -323,6 +329,7 @@
     </script> 
     <script>
         // JavaScript to handle the movie search
+        
         function searchMovie(event) {
             event.preventDefault(); // Prevent form submission
             const movieName = document.getElementById('movieInput').value.trim();
@@ -337,8 +344,7 @@
         }
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="script.js"></script>
-    
+    <script src="script.js"></script> 
     
 </body>
 </html>

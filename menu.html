@@ -4,8 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/.../5.15.4/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
 <body>
+  <div class="header">
+    <div class="hamburger" onclick="toggleNav()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+        <!-- Sidebar Navigation -->
+        <div class="side-nav" id="sideNav">
+          <img src="Images/logo.png" class="logo" alt="Logo">
+          <ul>
+            <li><a href="index.html">Home</a></li> <!-- Link to the Home page -->
+            <li><a href="about.html">About Us</a></li> <!-- Link to the About Us page -->
+            <li><a href="contactus.html">Contact Us</a></li> <!-- Link to the Contact Us page -->
+            <li><a href="menu.html">Menu</a></li> <!-- Link to the Menu page -->
+          </ul>
+      </div>
     <div class="menu">
         <section id="menu">
           <div class="row">
@@ -117,6 +136,74 @@
               <iframe src="https://www.youtube.com/embed/d74vHvsACSs" title="Video 20" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
           </div>
+        </div>
+        <footer class="footer">
+          <div class="footer-container">
+              <!-- About Section -->
+              <div class="footer-about">
+                  <h3>About Us</h3>
+                  <p>
+                      We are dedicated to providing a seamless entertainment experience, offering a curated collection of movies and TV shows tailored to your preferences.
+                  </p>
+              </div>
+              <!-- Quick Links -->
+              <div class="footer-links">
+                  <h3>Quick Links</h3>
+                  <ul>
+                    <!-- Link to About Us Page -->
+                    <li><a href="pages/about.html">About Us</a></li>
+        
+                    <!-- Link to Contact Us Page -->
+                    <li><a href="pages/contact.html">Contact Us</a></li>
+        
+                    <!-- Link to Menu Page -->
+                    <li><a href="pages/menu.html">Menu</a></li>
+                </ul>
+              </div>
+              <!-- Contact Information -->
+              <div class="footer-contact">
+                  <h3>Contact Us</h3>
+                  <p>Email: <a href="osiamarlon101@gmail.com">Bsis109Developer@gmail.com</a></p>
+                  <p>Phone: +639360441001</p>
+                  <p>Address: Dasmarinas Cavite Burol-Main KLD campus</p>
+              </div>
+          </div>
+          <!-- Footer Bottom -->
+          <div class="footer-bottom">
+              <p>&copy; 2024 Your Website Name. All Rights Reserved.</p>
+              <p>Follow us: 
+                  <a href="https://www.facebook.com/netflixph/?brand_redir=6275848869"><i class="fab fa-facebook"></i></a>
+                  <a href="https://x.com/netflix"><i class="fab fa-twitter"></i></a>
+                  <a href="https://www.instagram.com/netflix/"><i class="fab fa-instagram"></i></a>
+                  <a href="https://www.youtube.com/@Netflix"><i class="fab fa-youtube"></i></a>
+              </p>
+          </div>
+      </footer>
+          <script>
+            function toggleNav() {
+                const sideNav = document.getElementById("sideNav");
+                sideNav.classList.toggle("active");
+            }
+        </script> 
+        <script>
+            // JavaScript to handle the movie search
+            
+            function searchMovie(event) {
+                event.preventDefault(); // Prevent form submission
+                const movieName = document.getElementById('movieInput').value.trim();
+                if (movieName) {
+                    // You can redirect to a search page or display results here
+                    console.log(`Searching for: ${movieName}`);
+                    alert(`Searching for "${movieName}"...`); 
+                    // Replace alert with API call or redirection logic
+                } else {
+                    alert('Please enter a movie name.');
+                }
+            }
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="script.js"></script> 
+        
     
 </body>
 </html>

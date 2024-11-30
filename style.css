@@ -484,6 +484,168 @@ body {
         font-size: 0.9rem;
     }
 }
+.menu .row {
+    display: flex;
+    justify-content: center; /* Aligns horizontally */
+    align-items: center;     /* Aligns vertically */
+    text-align: center;      /* Ensures text is centered */
+}
+.main-text h1, .main-text h4 {
+    color: white;
+}
+/* Ensure responsiveness */
+@media (max-width: 768px) {
+    .menu .row {
+        height: auto; /* Adjust height for smaller screens */
+        padding: 20px; /* Add some padding */
+    }
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/*embeded video*/
+.video-container {
+    position: relative;
+    padding-top: 56.25%; /* Maintain 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+  }
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 20px;
+  }
+  .grid-item {
+    background-color: #333;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  @media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .team-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.sidenav {
+    width: 0;
+    height: 100vh;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.sidenav.open {
+    width: 250px;
+}
+
+    .chat-container {
+        width: 300px;
+        margin: auto;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        padding: 10px;
+        background-color: #f9f9f9;
+    }
+    #chat-box {
+        height: 300px;
+        overflow-y: auto;
+        border: 1px solid #ddd;
+        padding: 10px;
+        background-color: #fff;
+        margin-bottom: 10px;
+    }
+    .chat-message {
+        margin: 5px 0;
+    }
+    .user-message {
+        text-align: right;
+        color: blue;
+    }
+    .gpt-message {
+        text-align: left;
+        color: green;
+    }
+    .chat-input {
+        display: flex;
+    }
+    .chat-input input {
+        flex: 1;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px 0 0 5px;
+    }
+    .chat-input button {
+        padding: 10px;
+        border: none;
+        background-color: #007bff;
+        color: white;
+        cursor: pointer;
+        border-radius: 0 5px 5px 0;
+    }
+
+/* Ensure the body and html take up the full height of the screen */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Make sure the main content section takes up the available space */
+.main-content {
+    flex: 1;
+}
+
+/* Footer styling */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+/* Flexbox for the whole page layout */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+}
+
+/* Adjust footer content based on screen size */
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
 /* Footer Section */
 .footer {
     background-color: #1f1f1f;
@@ -576,73 +738,4 @@ body {
     .footer-container > div {
         margin: 0 auto 20px;
     }
-}
-.menu .row {
-    display: flex;
-    justify-content: center; /* Aligns horizontally */
-    align-items: center;     /* Aligns vertically */
-    text-align: center;      /* Ensures text is centered */
-}
-.main-text h1, .main-text h4 {
-    color: white;
-}
-/* Ensure responsiveness */
-@media (max-width: 768px) {
-    .menu .row {
-        height: auto; /* Adjust height for smaller screens */
-        padding: 20px; /* Add some padding */
-    }
-}
-html {
-    scroll-behavior: smooth;
-}
-
-/*embeded video*/
-.video-container {
-    position: relative;
-    padding-top: 56.25%; /* Maintain 16:9 aspect ratio */
-    height: 0;
-    overflow: hidden;
-  }
-  .video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
-    padding: 20px;
-  }
-  .grid-item {
-    background-color: #333;
-    border-radius: 8px;
-    overflow: hidden;
-  }
-  @media (max-width: 768px) {
-    .grid-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .team-container {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-.sidenav {
-    width: 0;
-    height: 100vh;
-    background-color: #333;
-    color: white;
-    position: fixed;
-    top: 0;
-    left: 0;
-    overflow-x: hidden;
-    transition: 0.5s;
-}
-
-.sidenav.open {
-    width: 250px;
 }
