@@ -1,52 +1,89 @@
-<div class="about-text">
-    <section id="about" class="">
-    <h1>About Us</h1>
-    <p>
-        Welcome to our platform, where entertainment meets innovation. We are passionate about delivering unlimited movies, TV shows, and more, tailored to your preferences. 
-        Our goal is to redefine how you experience content with seamless streaming across all your devices.
-    </p>
-    <p>
-        Whether you're at home or on the go, we bring the magic of storytelling right to your fingertips. Join us in exploring a world of entertainment, curated just for you.
-    </p>
-    <a href="https://www.netflix.com/login" target="_blank">
-        <button>Learn More</button>
-    </a>
-</section>
-</div>
-    <section class="team-section">
-        <h1>Meet Our Amazing Team</h1>
-        <p>Discover the talented people behind our success.</p>
-        <div class="team-container">
-            <!-- Team Member 1 -->
-            <div class="team-member">
-                <a href="https://www.facebook.com/profile.php?id=61564987641602" target="_blank">
-                    <img src="Images/marlon.png" alt="Marlon">
-                </a>
-                <h3>Marlon</h3>
-                <p>Lead Dev</p>
-            </div>
-            <!-- Team Member 2 -->
-            <div class="team-member">
-                <a href="https://www.facebook.com/profile.php?id=100012054128938" target="_blank">
-                    <img src="Images/bon.png" alt="Bon">
-                </a>
-                <h3>Bon</h3>
-                <p>Back End </p>
-            </div>
-            <!-- Team Member 3 -->
-            <div class="team-member">
-                <a href="https://www.facebook.com/profile.php?id=61560929114305" target="_blank">
-                    <img src="Images/rara.png" alt="RaRa">
-                </a>
-                <h3>RaRa</h3>
-                <p>Front End</p>
-            </div>
-            <!-- Team Member 4 -->
-            <div class="team-member">
-                <a href="https://www.facebook.com/reinasaurus.06" target="_blank">
-                    <img src="Images/rein.png" alt="Rein">
-                </a>
-                <h3>Rein</h3>
-                <p>Content Creator</p>
-            </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aboutus</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/.../5.15.4/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="hamburger" onclick="toggleNav()">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
+            <!-- Sidebar Navigation -->
+            <div class="side-nav" id="sideNav">
+              <img src="Images/logo.png" class="logo" alt="Logo">
+              <ul>
+                <li><a href="index.html">Home</a></li> <!-- Link to the Home page -->
+                <li><a href="about.html">About Us</a></li> <!-- Link to the About Us page -->
+                <li><a href="contactus.html">Contact Us</a></li> <!-- Link to the Contact Us page -->
+                <li><a href="menu.html">Menu</a></li> <!-- Link to the Menu page -->
+              </ul>
+          </div>
+          <div class="about-text">
+            <section id="about" class="">
+            <h1>About Us</h1>
+            <p>
+                Welcome to our platform, where entertainment meets innovation. We are passionate about delivering unlimited movies, TV shows, and more, tailored to your preferences. 
+                Our goal is to redefine how you experience content with seamless streaming across all your devices.
+            </p>
+            <p>
+                Whether you're at home or on the go, we bring the magic of storytelling right to your fingertips. Join us in exploring a world of entertainment, curated just for you.
+            </p>
+            <a href="https://www.netflix.com/login" target="_blank">
+                <button>Learn More</button>
+            </a>
+        </section>
+        </div>
+            <section class="team-section">
+                <h1>Meet Our Amazing Team</h1>
+                <p>Discover the talented people behind our success.</p>
+                <div class="team-container">
+                    <!-- Team Member 1 -->
+                    <div class="team-member">
+                        <a href="https://www.facebook.com/profile.php?id=61564987641602" target="_blank">
+                            <img src="Images/marlon.png" alt="Marlon">
+                        </a>
+                        <h3>Marlon</h3>
+                        <p>Lead Dev</p>
+                    </div>
+                    <!-- Team Member 2 -->
+                    <div class="team-member">
+                        <a href="https://www.facebook.com/profile.php?id=100012054128938" target="_blank">
+                            <img src="Images/bon.png" alt="Bon">
+                        </a>
+                        <h3>Bon</h3>
+                        <p>Back End </p>
+                    </div>
+                    <!-- Team Member 3 -->
+                    <div class="team-member">
+                        <a href="https://www.facebook.com/profile.php?id=61560929114305" target="_blank">
+                            <img src="Images/rara.png" alt="RaRa">
+                        </a>
+                        <h3>RaRa</h3>
+                        <p>Front End</p>
+                    </div>
+                    <!-- Team Member 4 -->
+                    <div class="team-member">
+                        <a href="https://www.facebook.com/reinasaurus.06" target="_blank">
+                            <img src="Images/rein.png" alt="Rein">
+                        </a>
+                        <h3>Rein</h3>
+                        <p>Content Creator</p>
+                    </div>
+                </div>
+        </div>
+        <script>
+            function toggleNav() {
+                const sideNav = document.getElementById("sideNav");
+                sideNav.classList.toggle("active");
+            }
+        </script> 
+    
+</body>
+</html>

@@ -1,24 +1,103 @@
-<div class="contact-us">
-    <section id="contact" class="">
-    <div class="contact-container">
-        <h1>Contact Us</h1>
-        <p>Have questions, feedback, or need support? We're here to help! Reach out to us using the form below or contact us directly via email or phone.</p>
-        <div class="contact-details">
-            <p><strong>Email:</strong> Bsis109Developer@gmail.com</p>
-            <p><strong>Phone:</strong> +63933666066</p>
-            <p><strong>Address:</strong> Burol-Main KLD Campus</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contactus</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/.../5.15.4/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="hamburger" onclick="toggleNav()">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-        <form action="#" method="post" class="contact-form">
-            <div class="form-group">
-                <input type="text" name="name" placeholder="Your Name" required>
+            <!-- Sidebar Navigation -->
+            <div class="side-nav" id="sideNav">
+              <img src="Images/logo.png" class="logo" alt="Logo">
+              <ul>
+                <li><a href="index.html">Home</a></li> <!-- Link to the Home page -->
+                <li><a href="about.html">About Us</a></li> <!-- Link to the About Us page -->
+                <li><a href="contactus.html">Contact Us</a></li> <!-- Link to the Contact Us page -->
+                <li><a href="menu.html">Menu</a></li> <!-- Link to the Menu page -->
+              </ul>
+          </div>
+          <div class="contact-us">
+            <section id="contact" class="">
+            <div class="contact-container">
+                <h1>Contact Us</h1>
+                <p>Have questions, feedback, or need support? We're here to help! Reach out to us using the form below or contact us directly via email or phone.</p>
+                <div class="contact-details">
+                    <p><strong>Email:</strong> Bsis109Developer@gmail.com</p>
+                    <p><strong>Phone:</strong> +63933666066</p>
+                    <p><strong>Address:</strong> Burol-Main KLD Campus</p>
+                </div>
+                <form action="#" method="post" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
             </div>
-            <div class="form-group">
-                <input type="email" name="email" placeholder="Your Email" required>
+            </section>
+        </div>
+        <footer class="footer">
+            <div class="footer-container">
+                <!-- About Section -->
+                <div class="footer-about">
+                    <h3>About Us</h3>
+                    <p>
+                        We are dedicated to providing a seamless entertainment experience, offering a curated collection of movies and TV shows tailored to your preferences.
+                    </p>
+                </div>
+                <!-- Quick Links -->
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                      <!-- Link to About Us Page -->
+                      <li><a href="pages/about.html">About Us</a></li>
+          
+                      <!-- Link to Contact Us Page -->
+                      <li><a href="pages/contact.html">Contact Us</a></li>
+          
+                      <!-- Link to Menu Page -->
+                      <li><a href="pages/menu.html">Menu</a></li>
+                  </ul>
+                </div>
+                <!-- Contact Information -->
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p>Email: <a href="osiamarlon101@gmail.com">Bsis109Developer@gmail.com</a></p>
+                    <p>Phone: +639360441001</p>
+                    <p>Address: Dasmarinas Cavite Burol-Main KLD campus</p>
+                </div>
             </div>
-            <div class="form-group">
-                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>&copy; 2024 Your Website Name. All Rights Reserved.</p>
+                <p>Follow us: 
+                    <a href="https://www.facebook.com/netflixph/?brand_redir=6275848869"><i class="fab fa-facebook"></i></a>
+                    <a href="https://x.com/netflix"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/netflix/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@Netflix"><i class="fab fa-youtube"></i></a>
+                </p>
             </div>
-            <button type="submit">Send Message</button>
-        </form>
-    </div>
-    </section>
+        </footer>
+        <script>
+            function toggleNav() {
+                const sideNav = document.getElementById("sideNav");
+                sideNav.classList.toggle("active");
+            }
+        </script> 
+    
+</body>
+</html>
